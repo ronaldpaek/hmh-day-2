@@ -77,7 +77,8 @@ h2 .gradient {
   background-color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   height: 400px;
-  width: 500px;
+  min-width: 300px;
+  max-width: 500px;
   justify-content: space-between;
   transition: all 0.2s ease-in-out;
   position: relative;
@@ -111,19 +112,6 @@ h2 .gradient {
 .card q {
   font-style: italic;
 }
-
-/* .card q {
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(91, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-top: auto;
-} */
 
 .card > span {
   align-self: flex-end;
