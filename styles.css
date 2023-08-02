@@ -1,0 +1,287 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 img {
+  width: "34px";
+  height: "34px";
+  margin-inline: -16px;
+  background-color: inherit;
+}
+
+h2 .gradient {
+  font-size: 36px;
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-container {
+  text-align: center;
+  background-color: rgb(239, 239, 239);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.quotes {
+  width: 90%;
+  margin-inline: auto;
+  list-style-type: none;
+  padding-left: 0;
+  margin-block: 0;
+  padding-block: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  width: 500px;
+  justify-content: space-between;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.card:hover::before {
+  background: rgba(0, 0, 0, 0.2);
+}
+.card:active {
+  transform: scale(0.95);
+}
+
+.card q {
+  font-style: italic;
+}
+
+/* .card q {
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(91, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: auto;
+} */
+
+.card > span {
+  align-self: flex-end;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+}
+
+.card q + span {
+  align-self: flex-end;
+  color: black;
+}
+
+.card > div {
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+}
+
+.quotes > li:nth-child(1) > .card {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url("/images/got-1.jpg");
+  background-size: cover;
+}
+
+.quotes li:nth-child(2) > .card {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url("/images/got-2.jpg");
+  background-size: cover;
+}
+
+.quotes li:nth-child(3) > .card {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url("/images/got-3.jpg");
+  background-size: cover;
+}
+
+.quotes li:nth-child(4) > .card {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url("/images/got-4.jpg");
+  background-size: cover;
+}
+
+.quotes li:nth-child(5) > .card {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url("/images/got-5.jpg");
+  background-size: cover;
+}
+
+.quotes li:nth-child(6) > .card {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url("/images/got-6.jpg");
+  background-size: cover;
+}
+
+.quotes li:nth-child(7) > .card {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url("/images/got-7.jpg");
+  background-size: cover;
+}
+
+.quotes li:nth-child(8) > .card {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url("/images/got-8.jpg");
+  background-size: cover;
+}
+
+.quotes li:nth-child(9) > .card {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url("/images/got-9.jpg");
+  background-size: cover;
+}
+
+.quotes li:nth-child(10) > .card {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url("/images/got-10.jpg");
+  background-size: cover;
+}
+
+.brave {
+  color: red;
+  font-weight: bold;
+  position: relative;
+  font-size: 18px;
+  top: -2px;
+}
+
+.brave::before {
+  content: "brave";
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  position: absolute;
+  font-size: 18px;
+  top: 4px;
+}
+
+.question {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.men {
+  padding: 4px;
+  border: 2px solid orange;
+  position: relative;
+}
+
+.men::before {
+  content: "";
+  position: absolute;
+  padding: 2px;
+  border: 2px solid orange;
+  top: 5px;
+  bottom: -10px;
+  left: 2px;
+  right: -8px;
+}
+
+.fear {
+  background: rgb(218, 218, 79);
+}
+
+.fear > span {
+  background: rgba(0, 0, 0);
+  color: rgb(231, 61, 61);
+  position: relative;
+}
+
+.fear > span::before {
+  color: green;
+  content: "fear?";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+.love {
+  font-size: 36px;
+  color: red;
+}
+
+.mine {
+  color: white;
+  background-color: green;
+  position: relative;
+}
+
+.mine::before {
+  color: black;
+  content: "mine";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
